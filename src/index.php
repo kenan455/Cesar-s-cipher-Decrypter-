@@ -29,7 +29,7 @@ print ("This code is a solution for the challenge from codenation.dev/aceleradev
 echo '<br>';
 echo '<br>';
 
-$json = file_get_contents('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=*YOUR CODENATION ID GOES HERE*');
+$json = file_get_contents('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=99503a9389cf2d260baac6737b2c3e080062ced9');
 
 file_put_contents('answer.json',$json);
 $objectResponse = json_decode($json);
