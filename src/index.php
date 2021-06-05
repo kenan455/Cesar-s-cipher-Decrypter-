@@ -25,10 +25,6 @@ function decrypt($str, $shift) {
 
 $shift = 1;
 
-print ("This code is a solution for the challenge from codenation.dev/aceleradev/react-online-1.<br><br>The algorithm decrypts a text that i had taken at codenation's API. This text was encrypted with Cesar's cipher, more specifically with the shift 1. After this i encrypt it again using the sha1 algorithm!<br>");
-echo '<br>';
-echo '<br>';
-
 $json = file_get_contents('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=99503a9389cf2d260baac6737b2c3e080062ced9');
 
 file_put_contents('answer.json',$json);
